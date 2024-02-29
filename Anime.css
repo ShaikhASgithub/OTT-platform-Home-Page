@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.row__poster  {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+      
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+  
+}
+
+
+.row__poster:hover{
+    transform: scale(1.08);
+}
+
+.row__posters::-webkit-scrollbar{ /* mere me kaam nhi kar rha he */
+    display: none;
+}
+
+.row__posterLarge{
+    max-height: 300px;
+ } 
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+ }
+
+.row{
+    color: white;
+    margin-left: 20px;
+ }
+
+ .banner {
+    height:400px;
+    position: relative;
+    background-image: url('https://wallpaperaccess.com/full/8673858.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+   
+   }
+
+   .banner::after
+  {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.4rem;
+    background-image: linear-gradient(
+       180deg,
+       transparent,
+       rgba(37, 37, 37, 0.61),
+       #111
+    );
+  }
+
+ .banner h2
+ {
+   font-size: 3rem;
+   font-weight: 800;
+   margin: 0;
+   padding: 0.8rem;
+   z-index: 10;
+
+
+ }
+
+ .banner h1
+ {
+   font-size: 50px;
+   margin: 0;
+   z-index: 10;
+ }
+
+ .banner__description{
+    max-width: 350px;
+    font-weight: 400px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    z-index: 10px;
+ }
+
+
+ .banner .banner__button
+ {
+   z-index: 10;
+ }
+
+ .banner .banner__button button
+ {
+   font-size: 16px;
+   color: rgb(242, 236, 236);
+   background-color: rgba(81, 81, 82, 0.7);
+   border: none;
+   padding: 8px 24px;
+   border-radius: 4px;
+
+
+ }
+
+ .banner::before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    
+  }
+
+.banner .banner__button .button_play
+   {
+    background-color: white;
+    color: black;
+   }
+
+.button_play i
+   {
+     margin-right: 6px;
+
+   }
+
+
+ .nav__logo{
+    width: 80px;
+    object-fit: contain;
+
+ }
+ .nav__avatar{
+    width: 30px;
+    object-fit: contain;
+ }
+ .nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+ }
+ .nav__black{
+    background-color: #111;
+    
+ }
+
+ footer .row 
+ {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(109, 105, 105) ;
+    text-shadow: #fff;
+    text-align: center;
+ }
+
+ .row__poster  {
+   width: 100%;
+   object-fit: contain;
+   max-height: 100px;
+   margin-right: 10px;
+   transition: transform 450ms;
+     
+}
+
+.row__posters {
+   display: flex;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   padding: 20px;
+ 
+}
+
+
+.row__poster:hover{
+   transform: scale(1.08);
+}
+
+.row__posters::-webkit-scrollbar{ /* mere me kaam nhi kar rha he */
+   display: none;
+}
+
+.row__poster{
+   max-height: 300px;
+} 
+
+.row__posterLarge:hover{
+   transform: scale(1.09);
+}
+
+.row{
+   color: white;
+   margin-left: 20px;
+}
+
+header{
+   background-color: transparent;
+   position: fixed;
+   z-index: 100;
+   left:0;
+   top: 0;
+   width: 100%;
+   transition: all ease 600ms;
+}
+header.black-bg{
+   background-color: rgb(20, 20, 20);
+}
+.header-cont{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.left-cont, .right-cont{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.header-brand{
+   max-width: 110px;
+}
+.main-nav{
+   list-style: none;
+   display: inline-flex;
+   flex-direction: row;
+}
+.nav-item{
+   margin-right: 20px;
+   color: #fff9f9;
+   opacity: .83;
+   font-weight:bolder;
+}
+.nav-item.active{
+   color: rgb(255, 255, 255);
+   opacity: 1;
+   font-weight: bolder;
+   
+}
+
+.right-cont svg,  .right-cont img{
+   margin-right: 22px;
+   cursor: pointer;
+}
+.right-cont svg{
+   color: white;
+}
+.right-cont img{
+   max-width:300px;
+   color: #111;
+   
+}
+
+
+
+
