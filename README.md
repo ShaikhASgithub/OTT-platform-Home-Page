@@ -1,1 +1,2 @@
-# OTT-platform-Home-Page
+Anime Streaming Platform HomePage
+![Uploading image.png…]()
